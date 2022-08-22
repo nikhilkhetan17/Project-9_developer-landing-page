@@ -61,6 +61,31 @@ nav .nav-item {
   cursor: pointer;
 }
 
+.fa-bars {
+  display: none;
+}
+
+/* -----media query------ */
+
+@media screen and (max-width: 800px) {
+  .nav-item {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    padding-right: 2rem;
+    font-size: 20px;
+    color: #ffffff;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+}
+
 /* ----------------------------------------------------------------------- */
 
 .header-image {
@@ -97,6 +122,19 @@ nav .nav-item {
   padding-right: 5rem;
   font-family: Righteous;
 }
+
+/* -----media query---- */
+
+@media screen and (max-width: 1200px) {
+  .header-image {
+    display: none;
+  }
+
+  .header-text {
+    margin-left: 2rem;
+  }
+}
+
 /* -----------------------------------APIs---------------------------------------- */
 
 .api {
@@ -117,8 +155,10 @@ nav .nav-item {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
+  flex-wrap: wrap;
+  gap: 3rem 8rem;
 }
 
 .card-active {
@@ -227,6 +267,26 @@ nav .nav-item {
   font-size: 1.3rem;
 }
 
+/* -------media query------- */
+
+@media screen and (max-width: 1200px) {
+  .blog-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-bottom,
+  .blog-author {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog-cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 /* ------------------------------------FAQ SECTION---------------------------------------- */
 
 .faq-section {
@@ -268,6 +328,12 @@ nav .nav-item {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1150px) {
+  .faq-image img {
+    display: none;
+  }
+}
+
 /* --------------------------------------------Download-------------------------------------------- */
 
 .download-section {
@@ -279,6 +345,7 @@ nav .nav-item {
   align-items: center;
   width: 90%;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .download-content h1 span {
@@ -322,6 +389,18 @@ form {
 ::placeholder {
   color: #000000;
 }
+
+/* ------media query----- */
+
+@media screen and (max-width: 540px) {
+  .download-email form input {
+    padding-right: 1rem;
+  }
+
+  .download-email form button {
+    padding: 0.6rem 1.25rem;
+  }
+}
 /* ----------------------------------Footer Section---------------------------------- */
 .footer-container {
   background-color: #4617fe;
@@ -334,15 +413,18 @@ form {
   align-items: center;
   width: 90%;
   margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 ul.list {
   display: flex;
-  gap: 0 4rem;
+  gap: 1rem 4rem;
   padding-top: 2rem;
   color: #ffffff;
   font-size: 1.2rem;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .logos-list {
@@ -358,3 +440,5 @@ ul.list {
   padding-right: 1.5rem;
   cursor: pointer;
 }
+
+/* -----media query------ */
