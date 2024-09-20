@@ -2,7 +2,7 @@
 
 <br>
 
-## 📌 Live Site URL: <a href="https://09developer-page.netlify.app/">**Visit Now**</a>
+## 📌 Live Site URL: <a href="https://project-9-developer-landing-page-hazel.vercel.app/">**Visit Now**</a>
 
 <br>
 
